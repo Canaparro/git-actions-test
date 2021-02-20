@@ -12,8 +12,8 @@ http://localhost:8080/api/helloworld
 ```
 
 ## CI/CD
-<p>The main purpose of this repository is to understand the features of github actions. The pipeline is defined on file ```github/workflows/workflow.yml```.
-The pipeline runs each time a push is made to the master branch and has two Jobs: Build and Docker.</p>
+The main purpose of this repository is to understand the features of github actions. The pipeline is defined on file ```github/workflows/workflow.yml```.
+The pipeline runs each time a push is made to the master branch and has two Jobs: Build and Docker.
 
 ###Build:
 <ol>
