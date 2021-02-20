@@ -19,6 +19,22 @@ jobs:
       - name: Build project
         run: mvn -B package
 
+      - name: Upload project jar
+        uses: actions/upload-artifact@v1
+        with:
+          name: app.jar
+          path: target/*.jar
+
+  docker:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download project jar
+        uses: actions/download-atifact@v1
+        with:
+          name: app.jar
+          path: target/app.jar
+
       - name: Login to DockerHub
         uses: docker/login-action@v1
         with:
