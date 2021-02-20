@@ -20,6 +20,7 @@ The pipeline runs each time a push is made to the master branch and has two Jobs
 <li>Checkout the repository to have access to the sourcecode</li>
 <li>Sets up Java and maven on the runner</li>
 <li>Sets up Java 11 and maven on the runner</li>
+<li>Tries to restore cached dependencies for maven</li>
 <li>Runs maven package run tests and create the jar file</li>
 <li>Uploads the jar file as an artifact to be used on the next job</li>
 </ol>
