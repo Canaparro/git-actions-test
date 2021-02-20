@@ -20,7 +20,7 @@ jobs:
         run: mvn -B package
 
       - name: Upload project jar
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v2
         with:
           name: app.jar
           path: target/*.jar
@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download project jar
-        uses: actions/download-atifact@v1
+        uses: actions/download-atifact@v2
         with:
           name: app.jar
           path: target/app.jar
